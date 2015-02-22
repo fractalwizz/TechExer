@@ -1,0 +1,10 @@
+<%= simple_form_for @card do |form| %>
+    <%= form.input :first_name, label: "First Name" %>
+    <%= form.input :last_name, label: "Last Name" %>
+    <%= form.input :company, label: "Company" %>
+    <%= form.input :work_phone, label: "Work Phone" %>
+    <%= form.input :work_email, label: "Work Email" %>
+    <%= form.input :home_phone, label: "Home Phone" %>
+    <%= form.input :personal, label: "Personal Email" %>
+    <%= form.button :submit %>
+<% end %>
