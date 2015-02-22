@@ -1,2 +1,15 @@
-<h1>Cards#index</h1>
-<p>Find me in app/views/cards/index.html.erb</p>
+<h1>Contact List</h1>
+
+<% @cards.each do |card| %>
+    <div class="card">
+        <p><%= card.first_name %>   <%= card.last_name %>
+        <p><%= card.company %>
+        <p>Work Phone : <%= card.work_phone %>
+        <p>Work Email : <%= card.work_email %>
+        <p>Home Phone : <%= card.home_phone %>
+        <p>Home Email : <%= card.personal %>
+        <p>----------------------------------------------</p>
+    </div>
+<% end %>
+
+<p><%= link_to "Add a Contact", new_card_path %></p>
