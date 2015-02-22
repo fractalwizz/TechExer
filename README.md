@@ -1,18 +1,13 @@
+ _____          _         __                   _          
+/__   \___  ___| |__     /__\_  _____ _ __ ___(_)___  ___ 
+  / /\/ _ \/ __| '_ \   /_\ \ \/ / _ \ '__/ __| / __|/ _ \
+ / / |  __/ (__| | | | //__  >  <  __/ | | (__| \__ \  __/
+ \/   \___|\___|_| |_| \__/ /_/\_\___|_|  \___|_|___/\___|
+                                                          
+                                                          
+Ruby on Rails Tech Exercise
+    - Simple Application
+    - Contact List
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
-
-
-Hi there! Welcome to Cloud9 IDE!
-
-To get you started, create some files, play with the terminal,
-or visit http://docs.c9.io for our documentation.
-If you want, you can also go watch some training videos at
-http://www.youtube.com/user/c9ide.
-
-Happy coding!
-The Cloud9 IDE team
+William Young
+wyoung@unomaha.edu
