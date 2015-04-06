@@ -1,0 +1,337 @@
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "cards"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "cards" ("first_name", "last_name", "company", "work_phone", "work_email", "home_phone", "personal", "created_at", "updated_at", "id") VALUES ('Brad', 'Pitt', 'Hollywood', '402-990-7384', 'bpitt@ebay.com', '880-341-5567', 'bpitt@google.com', '2015-04-06 15:00:36', '2015-04-06 15:00:36', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "cards" ("first_name", "last_name", "company", "work_phone", "work_email", "home_phone", "personal", "created_at", "updated_at", "id") VALUES ('William', 'Young', 'Target', '333-111-5564', 'wyoung@unomaha.edu', '402-999-6777', 'wyoung@red.edu', '2015-04-06 15:00:36', '2015-04-06 15:00:36', 298486374)[0m
+  [1m[35m (18.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------
+CardTest: test_testing
+----------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "cards"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "cards" ("first_name", "last_name", "company", "work_phone", "work_email", "home_phone", "personal", "created_at", "updated_at", "id") VALUES ('Brad', 'Pitt', 'Hollywood', '402-990-7384', 'bpitt@ebay.com', '880-341-5567', 'bpitt@google.com', '2015-04-06 15:02:59', '2015-04-06 15:02:59', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "cards" ("first_name", "last_name", "company", "work_phone", "work_email", "home_phone", "personal", "created_at", "updated_at", "id") VALUES ('William', 'Young', 'Target', '333-111-5564', 'wyoung@unomaha.edu', '402-999-6777', 'wyoung@red.edu', '2015-04-06 15:02:59', '2015-04-06 15:02:59', 298486374)[0m
+  [1m[35m (8.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------
+CardTest: test_save_Post
+------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mCard Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "cards"  WHERE "cards"."work_email" IS NULL LIMIT 1[0m
+  [1m[35mCard Exists (0.1ms)[0m  SELECT  1 AS one FROM "cards"  WHERE "cards"."personal" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+----------------------
+CardTest: test_testing
+----------------------
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "cards"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "cards" ("first_name", "last_name", "company", "work_phone", "work_email", "home_phone", "personal", "created_at", "updated_at", "id") VALUES ('Brad', 'Pitt', 'Hollywood', '402-990-7384', 'bpitt@ebay.com', '880-341-5567', 'bpitt@google.com', '2015-04-06 15:09:45', '2015-04-06 15:09:45', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "cards" ("first_name", "last_name", "company", "work_phone", "work_email", "home_phone", "personal", "created_at", "updated_at", "id") VALUES ('William', 'Young', 'Target', '333-111-5564', 'wyoung@unomaha.edu', '402-999-6777', 'wyoung@red.edu', '2015-04-06 15:09:45', '2015-04-06 15:09:45', 298486374)[0m
+  [1m[35m (13.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------
+CardTest: test_nill
+-------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "cards"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "cards" ("first_name", "last_name", "company", "work_phone", "work_email", "home_phone", "personal", "created_at", "updated_at", "id") VALUES ('Brad', 'Pitt', 'Hollywood', '402-990-7384', 'bpitt@ebay.com', '880-341-5567', 'bpitt@google.com', '2015-04-06 15:15:50', '2015-04-06 15:15:50', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "cards" ("first_name", "last_name", "company", "work_phone", "work_email", "home_phone", "personal", "created_at", "updated_at", "id") VALUES ('William', 'Young', 'Target', '333-111-5564', 'wyoung@unomaha.edu', '402-999-6777', 'wyoung@red.edu', '2015-04-06 15:15:50', '2015-04-06 15:15:50', 298486374)[0m
+  [1m[35m (8.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------
+CardTest: test_save_without_company
+-----------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mCard Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "cards"  WHERE "cards"."work_email" IS NULL LIMIT 1[0m
+  [1m[35mCard Exists (0.1ms)[0m  SELECT  1 AS one FROM "cards"  WHERE "cards"."personal" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "cards"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "cards" ("id", "first_name", "last_name", "company", "work_phone", "work_email", "home_phone", "personal", "created_at", "updated_at") VALUES (1, 'Brad', 'Pitt', 'Hollywood', '402-990-7384', 'bpitt@ebay.com', '880-341-5567', 'bpitt@google.com', '2015-04-06 15:18:47', '2015-04-06 15:18:47')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "cards" ("id", "first_name", "last_name", "company", "work_phone", "work_email", "home_phone", "personal", "created_at", "updated_at") VALUES (2, 'William', 'Young', 'Target', '333-111-5564', 'wyoung@unomaha.edu', '402-999-6777', 'wyoung@red.edu', '2015-04-06 15:18:47', '2015-04-06 15:18:47')[0m
+  [1m[35m (10.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------
+CardTest: test_instance
+-----------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "cards"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "cards" ("id", "first_name", "last_name", "company", "work_phone", "work_email", "home_phone", "personal", "created_at", "updated_at") VALUES (1, 'Brad', 'Pitt', 'Hollywood', '402-990-7384', 'bpitt@ebay.com', '880-341-5567', 'bpitt@google.com', '2015-04-06 15:19:02', '2015-04-06 15:19:02')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "cards" ("id", "first_name", "last_name", "company", "work_phone", "work_email", "home_phone", "personal", "created_at", "updated_at") VALUES (2, 'William', 'Young', 'Target', '333-111-5564', 'wyoung@unomaha.edu', '402-999-6777', 'wyoung@red.edu', '2015-04-06 15:19:02', '2015-04-06 15:19:02')[0m
+  [1m[35m (10.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------
+CardTest: test_instance
+-----------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "cards"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "cards" ("id", "first_name", "last_name", "company", "work_phone", "work_email", "home_phone", "personal", "created_at", "updated_at") VALUES (1, 'Brad', 'Pitt', 'Hollywood', '402-990-7384', 'bpitt@ebay.com', '880-341-5567', 'bpitt@google.com', '2015-04-06 15:21:10', '2015-04-06 15:21:10')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "cards" ("id", "first_name", "last_name", "company", "work_phone", "work_email", "home_phone", "personal", "created_at", "updated_at") VALUES (2, 'William', 'Young', 'Target', '333-111-5564', 'wyoung@unomaha.edu', '402-999-6777', 'wyoung@red.edu', '2015-04-06 15:21:10', '2015-04-06 15:21:10')[0m
+  [1m[35m (68.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------
+CardTest: test_instance
+-----------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "cards"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "cards" ("first_name", "last_name", "company", "work_phone", "work_email", "home_phone", "personal", "created_at", "updated_at", "id") VALUES ('Brad', 'Pitt', 'Hollywood', '402-990-7384', 'bpitt@ebay.com', '880-341-5567', 'bpitt@google.com', '2015-04-06 15:32:15', '2015-04-06 15:32:15', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "cards" ("first_name", "last_name", "company", "work_phone", "work_email", "home_phone", "personal", "created_at", "updated_at", "id") VALUES ('William', 'Young', 'Target', '333-111-5564', 'wyoung@unomaha.edu', '402-999-6777', 'wyoung@red.edu', '2015-04-06 15:32:15', '2015-04-06 15:32:15', 298486374)[0m
+  [1m[35m (14.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------------------
+CardsControllerTest: test_should_get_index
+------------------------------------------
+Processing by CardsController#index as HTML
+  [1m[35mCard Load (0.3ms)[0m  SELECT "cards".* FROM "cards"
+  Rendered cards/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 991ms (Views: 990.5ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------
+CardsControllerTest: test_should_get_new
+----------------------------------------
+Processing by CardsController#new as HTML
+Completed 200 OK in 102ms (Views: 101.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "cards"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "cards" ("first_name", "last_name", "company", "work_phone", "work_email", "home_phone", "personal", "created_at", "updated_at", "id") VALUES ('Brad', 'Pitt', 'Hollywood', '402-990-7384', 'bpitt@ebay.com', '880-341-5567', 'bpitt@google.com', '2015-04-06 15:34:01', '2015-04-06 15:34:01', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "cards" ("first_name", "last_name", "company", "work_phone", "work_email", "home_phone", "personal", "created_at", "updated_at", "id") VALUES ('William', 'Young', 'Target', '333-111-5564', 'wyoung@unomaha.edu', '402-999-6777', 'wyoung@red.edu', '2015-04-06 15:34:01', '2015-04-06 15:34:01', 298486374)[0m
+  [1m[35m (11.8ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+------------------------------------------
+CardsControllerTest: test_should_get_index
+------------------------------------------
+Processing by CardsController#index as HTML
+  [1m[35mCard Load (0.3ms)[0m  SELECT "cards".* FROM "cards"
+  Rendered cards/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 88ms (Views: 87.5ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------
+CardsControllerTest: test_should_get_new
+----------------------------------------
+Processing by CardsController#new as HTML
+Completed 200 OK in 95ms (Views: 94.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.5ms)[0m  [1mDELETE FROM "cards"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "cards" ("first_name", "last_name", "company", "work_phone", "work_email", "home_phone", "personal", "created_at", "updated_at", "id") VALUES ('Brad', 'Pitt', 'Hollywood', '402-990-7384', 'bpitt@ebay.com', '880-341-5567', 'bpitt@google.com', '2015-04-06 15:38:48', '2015-04-06 15:38:48', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "cards" ("first_name", "last_name", "company", "work_phone", "work_email", "home_phone", "personal", "created_at", "updated_at", "id") VALUES ('William', 'Young', 'Target', '333-111-5564', 'wyoung@unomaha.edu', '402-999-6777', 'wyoung@red.edu', '2015-04-06 15:38:48', '2015-04-06 15:38:48', 298486374)[0m
+  [1m[35m (11.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+CardsControllerTest: test_should_create_card
+--------------------------------------------
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "cards"
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------
+CardsControllerTest: test_should_get_index
+------------------------------------------
+Processing by CardsController#index as HTML
+  [1m[36mCard Load (0.3ms)[0m  [1mSELECT "cards".* FROM "cards"[0m
+Completed 200 OK in 48ms (Views: 46.7ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------
+CardsControllerTest: test_should_get_new
+----------------------------------------
+Processing by CardsController#new as HTML
+Completed 200 OK in 124ms (Views: 123.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "cards"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "cards" ("first_name", "last_name", "company", "work_phone", "work_email", "home_phone", "personal", "created_at", "updated_at", "id") VALUES ('Brad', 'Pitt', 'Hollywood', '402-990-7384', 'bpitt@ebay.com', '880-341-5567', 'bpitt@google.com', '2015-04-06 15:39:13', '2015-04-06 15:39:13', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "cards" ("first_name", "last_name", "company", "work_phone", "work_email", "home_phone", "personal", "created_at", "updated_at", "id") VALUES ('William', 'Young', 'Target', '333-111-5564', 'wyoung@unomaha.edu', '402-999-6777', 'wyoung@red.edu', '2015-04-06 15:39:13', '2015-04-06 15:39:13', 298486374)[0m
+  [1m[35m (19.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+CardsControllerTest: test_should_create_card
+--------------------------------------------
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "cards"
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------
+CardsControllerTest: test_should_get_index
+------------------------------------------
+Processing by CardsController#index as HTML
+  [1m[36mCard Load (0.3ms)[0m  [1mSELECT "cards".* FROM "cards"[0m
+Completed 200 OK in 45ms (Views: 44.4ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------
+CardsControllerTest: test_should_get_new
+----------------------------------------
+Processing by CardsController#new as HTML
+Completed 200 OK in 181ms (Views: 180.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.5ms)[0m  [1mDELETE FROM "cards"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "cards" ("first_name", "last_name", "company", "work_phone", "work_email", "home_phone", "personal", "created_at", "updated_at", "id") VALUES ('Brad', 'Pitt', 'Hollywood', '402-990-7384', 'bpitt@ebay.com', '880-341-5567', 'bpitt@google.com', '2015-04-06 15:43:33', '2015-04-06 15:43:33', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "cards" ("first_name", "last_name", "company", "work_phone", "work_email", "home_phone", "personal", "created_at", "updated_at", "id") VALUES ('William', 'Young', 'Target', '333-111-5564', 'wyoung@unomaha.edu', '402-999-6777', 'wyoung@red.edu', '2015-04-06 15:43:33', '2015-04-06 15:43:33', 298486374)[0m
+  [1m[35m (15.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+CardsControllerTest: test_should_create_card
+--------------------------------------------
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "cards"
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------
+CardsControllerTest: test_should_get_index
+------------------------------------------
+Processing by CardsController#index as HTML
+  [1m[36mCard Load (0.2ms)[0m  [1mSELECT "cards".* FROM "cards"[0m
+Completed 200 OK in 41ms (Views: 40.2ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------
+CardsControllerTest: test_should_get_new
+----------------------------------------
+Processing by CardsController#new as HTML
+Completed 200 OK in 178ms (Views: 177.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "cards"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "cards" ("first_name", "last_name", "company", "work_phone", "work_email", "home_phone", "personal", "created_at", "updated_at", "id") VALUES ('Brad', 'Pitt', 'Hollywood', '402-990-7384', 'bpitt@ebay.com', '880-341-5567', 'bpitt@google.com', '2015-04-06 15:46:53', '2015-04-06 15:46:53', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "cards" ("first_name", "last_name", "company", "work_phone", "work_email", "home_phone", "personal", "created_at", "updated_at", "id") VALUES ('William', 'Young', 'Target', '333-111-5564', 'wyoung@unomaha.edu', '402-999-6777', 'wyoung@red.edu', '2015-04-06 15:46:53', '2015-04-06 15:46:53', 298486374)[0m
+  [1m[35m (10.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+CardsControllerTest: test_should_create_card
+--------------------------------------------
+Processing by CardsController#create as HTML
+Completed 400 Bad Request in 0ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------------------
+CardsControllerTest: test_should_get_index
+------------------------------------------
+Processing by CardsController#index as HTML
+  [1m[35mCard Load (0.2ms)[0m  SELECT "cards".* FROM "cards"
+Completed 200 OK in 33ms (Views: 32.2ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------
+CardsControllerTest: test_should_get_new
+----------------------------------------
+Processing by CardsController#new as HTML
+Completed 200 OK in 145ms (Views: 144.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "cards"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "cards" ("first_name", "last_name", "company", "work_phone", "work_email", "home_phone", "personal", "created_at", "updated_at", "id") VALUES ('Brad', 'Pitt', 'Hollywood', '402-990-7384', 'bpitt@ebay.com', '880-341-5567', 'bpitt@google.com', '2015-04-06 15:51:39', '2015-04-06 15:51:39', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "cards" ("first_name", "last_name", "company", "work_phone", "work_email", "home_phone", "personal", "created_at", "updated_at", "id") VALUES ('William', 'Young', 'Target', '333-111-5564', 'wyoung@unomaha.edu', '402-999-6777', 'wyoung@red.edu', '2015-04-06 15:51:39', '2015-04-06 15:51:39', 298486374)[0m
+  [1m[35m (13.7ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+CardsControllerTest: test_should_create_card
+--------------------------------------------
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "cards"
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------
+CardsControllerTest: test_should_get_index
+------------------------------------------
+Processing by CardsController#index as HTML
+  [1m[36mCard Load (0.2ms)[0m  [1mSELECT "cards".* FROM "cards"[0m
+Completed 200 OK in 87ms (Views: 86.1ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------
+CardsControllerTest: test_should_get_new
+----------------------------------------
+Processing by CardsController#new as HTML
+Completed 200 OK in 86ms (Views: 85.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "cards"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "cards" ("first_name", "last_name", "company", "work_phone", "work_email", "home_phone", "personal", "created_at", "updated_at", "id") VALUES ('Brad', 'Pitt', 'Hollywood', '402-990-7384', 'bpitt@ebay.com', '880-341-5567', 'bpitt@google.com', '2015-04-06 15:52:26', '2015-04-06 15:52:26', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "cards" ("first_name", "last_name", "company", "work_phone", "work_email", "home_phone", "personal", "created_at", "updated_at", "id") VALUES ('William', 'Young', 'Target', '333-111-5564', 'wyoung@unomaha.edu', '402-999-6777', 'wyoung@red.edu', '2015-04-06 15:52:26', '2015-04-06 15:52:26', 298486374)[0m
+  [1m[35m (10.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+CardsControllerTest: test_should_create_card
+--------------------------------------------
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "cards"
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------
+CardsControllerTest: test_should_get_index
+------------------------------------------
+Processing by CardsController#index as HTML
+  [1m[36mCard Load (0.2ms)[0m  [1mSELECT "cards".* FROM "cards"[0m
+Completed 200 OK in 30ms (Views: 29.6ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------
+CardsControllerTest: test_should_get_new
+----------------------------------------
+Processing by CardsController#new as HTML
+Completed 200 OK in 157ms (Views: 156.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "cards"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "cards" ("first_name", "last_name", "company", "work_phone", "work_email", "home_phone", "personal", "created_at", "updated_at", "id") VALUES ('Brad', 'Pitt', 'Hollywood', '402-990-7384', 'bpitt@ebay.com', '880-341-5567', 'bpitt@google.com', '2015-04-06 16:04:09', '2015-04-06 16:04:09', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "cards" ("first_name", "last_name", "company", "work_phone", "work_email", "home_phone", "personal", "created_at", "updated_at", "id") VALUES ('William', 'Young', 'Target', '333-111-5564', 'wyoung@unomaha.edu', '402-999-6777', 'wyoung@red.edu', '2015-04-06 16:04:09', '2015-04-06 16:04:09', 298486374)[0m
+  [1m[35m (21.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------
+CardTest: test_save_without_company
+-----------------------------------
+  [1m[35m (1.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mCard Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "cards"  WHERE "cards"."work_email" IS NULL LIMIT 1[0m
+  [1m[35mCard Exists (0.1ms)[0m  SELECT  1 AS one FROM "cards"  WHERE "cards"."personal" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+---------------------------------
+CardTest: test_save_without_title
+---------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mCard Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "cards"  WHERE "cards"."work_email" IS NULL LIMIT 1[0m
+  [1m[35mCard Exists (0.1ms)[0m  SELECT  1 AS one FROM "cards"  WHERE "cards"."personal" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------------------
+CardsControllerTest: test_should_get_index
+------------------------------------------
+Processing by CardsController#index as HTML
+  [1m[35mCard Load (0.3ms)[0m  SELECT "cards".* FROM "cards"
+  Rendered cards/index.html.erb within layouts/application (48.3ms)
+Completed 200 OK in 77ms (Views: 75.4ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------
+CardsControllerTest: test_should_get_new
+----------------------------------------
+Processing by CardsController#new as HTML
+Completed 200 OK in 80ms (Views: 79.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m

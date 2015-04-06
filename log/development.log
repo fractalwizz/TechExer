@@ -546,3 +546,476 @@ Started GET "/assets/cards.js?body=1" for 72.213.28.77 at 2015-02-22 19:36:07 +0
 
 
 Started GET "/assets/application.js?body=1" for 72.213.28.77 at 2015-02-22 19:36:07 +0000
+
+
+Started GET "/" for 72.213.28.77 at 2015-02-22 19:38:32 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CardsController#index as HTML
+  [1m[35mCard Load (0.2ms)[0m  SELECT "cards".* FROM "cards"
+  Rendered cards/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 97ms (Views: 83.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/cards.css?body=1" for 72.213.28.77 at 2015-02-22 19:38:33 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 72.213.28.77 at 2015-02-22 19:38:33 +0000
+
+
+Started GET "/assets/application.css?body=1" for 72.213.28.77 at 2015-02-22 19:38:33 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 72.213.28.77 at 2015-02-22 19:38:33 +0000
+
+
+Started GET "/assets/cards.js?body=1" for 72.213.28.77 at 2015-02-22 19:38:33 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 72.213.28.77 at 2015-02-22 19:38:33 +0000
+
+
+Started GET "/assets/application.js?body=1" for 72.213.28.77 at 2015-02-22 19:38:33 +0000
+
+
+Started GET "/cards/new" for 72.213.28.77 at 2015-02-22 19:38:36 +0000
+Processing by CardsController#new as HTML
+  Rendered cards/new.html.erb within layouts/application (97.7ms)
+Completed 200 OK in 152ms (Views: 149.9ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/cards" for 72.213.28.77 at 2015-02-22 19:38:37 +0000
+Processing by CardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6RfE1ndzafRBlbqYhK+ROluEjYl9erTiuHfbhn94lgM=", "card"=>{"first_name"=>"", "last_name"=>"", "company"=>"", "work_phone"=>"", "work_email"=>"", "home_phone"=>"", "personal"=>""}, "commit"=>"Create Card"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCard Exists (0.2ms)[0m  SELECT  1 AS one FROM "cards"  WHERE "cards"."work_email" = '' LIMIT 1
+  [1m[36mCard Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "cards"  WHERE "cards"."personal" = '' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered cards/new.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 77ms (Views: 57.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 72.213.28.77 at 2015-02-22 19:38:38 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 72.213.28.77 at 2015-02-22 19:38:38 +0000
+
+
+Started GET "/assets/cards.css?body=1" for 72.213.28.77 at 2015-02-22 19:38:38 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 72.213.28.77 at 2015-02-22 19:38:38 +0000
+
+
+Started GET "/assets/application.css?body=1" for 72.213.28.77 at 2015-02-22 19:38:38 +0000
+
+
+Started GET "/assets/cards.js?body=1" for 72.213.28.77 at 2015-02-22 19:38:38 +0000
+
+
+Started GET "/assets/application.js?body=1" for 72.213.28.77 at 2015-02-22 19:38:38 +0000
+
+
+Started GET "/" for 72.213.28.77 at 2015-02-22 20:47:37 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CardsController#index as HTML
+  [1m[35mCard Load (0.2ms)[0m  SELECT "cards".* FROM "cards"
+  Rendered cards/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 95ms (Views: 81.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/cards.css?body=1" for 72.213.28.77 at 2015-02-22 20:47:37 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 72.213.28.77 at 2015-02-22 20:47:37 +0000
+
+
+Started GET "/assets/application.css?body=1" for 72.213.28.77 at 2015-02-22 20:47:38 +0000
+
+
+Started GET "/assets/application.js?body=1" for 72.213.28.77 at 2015-02-22 20:47:38 +0000
+
+
+Started GET "/assets/cards.js?body=1" for 72.213.28.77 at 2015-02-22 20:47:38 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 72.213.28.77 at 2015-02-22 20:47:38 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 72.213.28.77 at 2015-02-22 20:47:38 +0000
+
+
+Started GET "/cards/new" for 72.213.28.77 at 2015-02-22 20:47:40 +0000
+Processing by CardsController#new as HTML
+  Rendered cards/new.html.erb within layouts/application (92.1ms)
+Completed 200 OK in 135ms (Views: 132.7ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/cards" for 72.213.28.77 at 2015-02-22 20:47:59 +0000
+Processing by CardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6RfE1ndzafRBlbqYhK+ROluEjYl9erTiuHfbhn94lgM=", "card"=>{"first_name"=>"William", "last_name"=>"Young", "company"=>"Target", "work_phone"=>"402-390-8880", "work_email"=>"wyoung@target_corp.org", "home_phone"=>"402-990-7683", "personal"=>"wyoung@unomaha.edu"}, "commit"=>"Create Card"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCard Exists (0.3ms)[0m  SELECT  1 AS one FROM "cards"  WHERE "cards"."work_email" = 'wyoung@target_corp.org' LIMIT 1
+  [1m[36mCard Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "cards"  WHERE "cards"."personal" = 'wyoung@unomaha.edu' LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "cards" ("company", "created_at", "first_name", "home_phone", "last_name", "personal", "updated_at", "work_email", "work_phone") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["company", "Target"], ["created_at", "2015-02-22 20:47:59.598325"], ["first_name", "William"], ["home_phone", "402-990-7683"], ["last_name", "Young"], ["personal", "wyoung@unomaha.edu"], ["updated_at", "2015-02-22 20:47:59.598325"], ["work_email", "wyoung@target_corp.org"], ["work_phone", "402-390-8880"]]
+  [1m[36m (7.5ms)[0m  [1mcommit transaction[0m
+Redirected to https://techexer-fractalwizz-1.c9.io/
+Completed 302 Found in 33ms (ActiveRecord: 8.6ms)
+
+
+Started GET "/" for 72.213.28.77 at 2015-02-22 20:47:59 +0000
+Processing by CardsController#index as HTML
+  [1m[35mCard Load (0.3ms)[0m  SELECT "cards".* FROM "cards"
+  Rendered cards/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 47ms (Views: 45.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 72.213.28.77 at 2015-02-22 20:48:00 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 72.213.28.77 at 2015-02-22 20:48:00 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 72.213.28.77 at 2015-02-22 20:48:00 +0000
+
+
+Started GET "/assets/cards.js?body=1" for 72.213.28.77 at 2015-02-22 20:48:00 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 72.213.28.77 at 2015-02-22 20:48:00 +0000
+
+
+Started GET "/assets/cards.css?body=1" for 72.213.28.77 at 2015-02-22 20:48:00 +0000
+
+
+Started GET "/assets/application.js?body=1" for 72.213.28.77 at 2015-02-22 20:48:00 +0000
+  [1m[36m (9.7ms)[0m  [1mDROP TABLE "cards"[0m
+  [1m[35m (8.4ms)[0m  CREATE TABLE "cards" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "last_name" varchar(255), "company" varchar(255), "work_phone" varchar(255), "work_email" varchar(255), "home_phone" varchar(255), "personal" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+
+
+Started GET "/" for 137.48.197.171 at 2015-02-23 17:55:40 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CardsController#index as HTML
+  [1m[35mCard Load (0.4ms)[0m  SELECT "cards".* FROM "cards"
+  Rendered cards/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 156ms (Views: 139.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/cards.css?body=1" for 137.48.197.171 at 2015-02-23 17:55:41 +0000
+
+
+Started GET "/assets/application.js?body=1" for 137.48.197.171 at 2015-02-23 17:55:41 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 137.48.197.171 at 2015-02-23 17:55:41 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 137.48.197.171 at 2015-02-23 17:55:41 +0000
+
+
+Started GET "/assets/application.css?body=1" for 137.48.197.171 at 2015-02-23 17:55:41 +0000
+
+
+Started GET "/assets/cards.js?body=1" for 137.48.197.171 at 2015-02-23 17:55:41 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 137.48.197.171 at 2015-02-23 17:55:41 +0000
+
+
+Started GET "/cards/new" for 137.48.197.171 at 2015-02-23 17:55:43 +0000
+Processing by CardsController#new as HTML
+  Rendered cards/new.html.erb within layouts/application (147.0ms)
+Completed 200 OK in 192ms (Views: 190.0ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/cards" for 137.48.197.171 at 2015-02-23 17:56:06 +0000
+Processing by CardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6bC9CQge9aVdFh1+MB5lxYAuUEXZrPGAowcs3TPk8TI=", "card"=>{"first_name"=>"William", "last_name"=>"Young", "company"=>"Target", "work_phone"=>"402-390-8880", "work_email"=>"wyoung@target_corp.org", "home_phone"=>"402-990-7683", "personal"=>"wyoung@unomaha.edu"}, "commit"=>"Create Card"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mCard Exists (0.3ms)[0m  SELECT  1 AS one FROM "cards"  WHERE "cards"."work_email" = 'wyoung@target_corp.org' LIMIT 1
+  [1m[36mCard Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "cards"  WHERE "cards"."personal" = 'wyoung@unomaha.edu' LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "cards" ("company", "created_at", "first_name", "home_phone", "last_name", "personal", "updated_at", "work_email", "work_phone") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["company", "Target"], ["created_at", "2015-02-23 17:56:06.634968"], ["first_name", "William"], ["home_phone", "402-990-7683"], ["last_name", "Young"], ["personal", "wyoung@unomaha.edu"], ["updated_at", "2015-02-23 17:56:06.634968"], ["work_email", "wyoung@target_corp.org"], ["work_phone", "402-390-8880"]]
+  [1m[36m (10.1ms)[0m  [1mcommit transaction[0m
+Redirected to https://techexer-fractalwizz-1.c9.io/
+Completed 302 Found in 40ms (ActiveRecord: 11.3ms)
+
+
+Started GET "/" for 137.48.197.171 at 2015-02-23 17:56:06 +0000
+Processing by CardsController#index as HTML
+  [1m[35mCard Load (0.3ms)[0m  SELECT "cards".* FROM "cards"
+  Rendered cards/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 59ms (Views: 57.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/cards.css?body=1" for 137.48.197.171 at 2015-02-23 17:56:07 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 137.48.197.171 at 2015-02-23 17:56:07 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 137.48.197.171 at 2015-02-23 17:56:07 +0000
+
+
+Started GET "/assets/application.css?body=1" for 137.48.197.171 at 2015-02-23 17:56:07 +0000
+
+
+Started GET "/assets/cards.js?body=1" for 137.48.197.171 at 2015-02-23 17:56:07 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 137.48.197.171 at 2015-02-23 17:56:07 +0000
+
+
+Started GET "/assets/application.js?body=1" for 137.48.197.171 at 2015-02-23 17:56:07 +0000
+
+
+Started GET "/cards/new" for 137.48.197.171 at 2015-02-23 17:56:10 +0000
+Processing by CardsController#new as HTML
+  Rendered cards/new.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 55ms (Views: 54.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cards" for 137.48.197.171 at 2015-02-23 17:56:47 +0000
+Processing by CardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6bC9CQge9aVdFh1+MB5lxYAuUEXZrPGAowcs3TPk8TI=", "card"=>{"first_name"=>"Conner", "last_name"=>"Joyce", "company"=>"Retail", "work_phone"=>"402-656-7888", "work_email"=>"cjr4@retail.edu", "home_phone"=>"402-112-9223", "personal"=>""}, "commit"=>"Create Card"}
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mCard Exists (0.5ms)[0m  SELECT  1 AS one FROM "cards"  WHERE "cards"."work_email" = 'cjr4@retail.edu' LIMIT 1
+  [1m[36mCard Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "cards"  WHERE "cards"."personal" = '' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  Rendered cards/new.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 82ms (Views: 70.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 137.48.197.171 at 2015-02-23 17:56:48 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 137.48.197.171 at 2015-02-23 17:56:48 +0000
+
+
+Started GET "/assets/cards.js?body=1" for 137.48.197.171 at 2015-02-23 17:56:48 +0000
+
+
+Started GET "/assets/cards.css?body=1" for 137.48.197.171 at 2015-02-23 17:56:48 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 137.48.197.171 at 2015-02-23 17:56:48 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 137.48.197.171 at 2015-02-23 17:56:48 +0000
+
+
+Started GET "/assets/application.js?body=1" for 137.48.197.171 at 2015-02-23 17:56:48 +0000
+
+
+Started POST "/cards" for 137.48.197.171 at 2015-02-23 17:56:59 +0000
+Processing by CardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6bC9CQge9aVdFh1+MB5lxYAuUEXZrPGAowcs3TPk8TI=", "card"=>{"first_name"=>"Conner", "last_name"=>"Joyce", "company"=>"Retail", "work_phone"=>"402-656-7888", "work_email"=>"cjr4@retail.edu", "home_phone"=>"402-112-9223", "personal"=>"test@unomaha.edu"}, "commit"=>"Create Card"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mCard Exists (0.3ms)[0m  SELECT  1 AS one FROM "cards"  WHERE "cards"."work_email" = 'cjr4@retail.edu' LIMIT 1
+  [1m[36mCard Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "cards"  WHERE "cards"."personal" = 'test@unomaha.edu' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "cards" ("company", "created_at", "first_name", "home_phone", "last_name", "personal", "updated_at", "work_email", "work_phone") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["company", "Retail"], ["created_at", "2015-02-23 17:56:59.206325"], ["first_name", "Conner"], ["home_phone", "402-112-9223"], ["last_name", "Joyce"], ["personal", "test@unomaha.edu"], ["updated_at", "2015-02-23 17:56:59.206325"], ["work_email", "cjr4@retail.edu"], ["work_phone", "402-656-7888"]]
+  [1m[36m (14.5ms)[0m  [1mcommit transaction[0m
+Redirected to https://techexer-fractalwizz-1.c9.io/
+Completed 302 Found in 23ms (ActiveRecord: 15.5ms)
+
+
+Started GET "/" for 137.48.197.171 at 2015-02-23 17:56:59 +0000
+Processing by CardsController#index as HTML
+  [1m[35mCard Load (0.3ms)[0m  SELECT "cards".* FROM "cards"
+  Rendered cards/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 95ms (Views: 94.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/cards.css?body=1" for 137.48.197.171 at 2015-02-23 17:57:00 +0000
+
+
+Started GET "/assets/application.css?body=1" for 137.48.197.171 at 2015-02-23 17:57:00 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 137.48.197.171 at 2015-02-23 17:57:00 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 137.48.197.171 at 2015-02-23 17:57:00 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 137.48.197.171 at 2015-02-23 17:57:00 +0000
+
+
+Started GET "/assets/cards.js?body=1" for 137.48.197.171 at 2015-02-23 17:57:00 +0000
+
+
+Started GET "/assets/application.js?body=1" for 137.48.197.171 at 2015-02-23 17:57:00 +0000
+
+
+Started GET "/" for 137.48.197.171 at 2015-02-23 17:57:12 +0000
+Processing by CardsController#index as HTML
+  [1m[36mCard Load (0.3ms)[0m  [1mSELECT "cards".* FROM "cards"[0m
+  Rendered cards/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 46ms (Views: 45.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/cards.css?body=1" for 137.48.197.171 at 2015-02-23 17:57:13 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 137.48.197.171 at 2015-02-23 17:57:13 +0000
+
+
+Started GET "/assets/cards.js?body=1" for 137.48.197.171 at 2015-02-23 17:57:13 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 137.48.197.171 at 2015-02-23 17:57:13 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 137.48.197.171 at 2015-02-23 17:57:13 +0000
+
+
+Started GET "/assets/application.js?body=1" for 137.48.197.171 at 2015-02-23 17:57:13 +0000
+
+
+Started GET "/assets/application.css?body=1" for 137.48.197.171 at 2015-02-23 17:57:13 +0000
+  [1m[36m (15.8ms)[0m  [1mDROP TABLE "cards"[0m
+  [1m[35m (11.4ms)[0m  CREATE TABLE "cards" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "last_name" varchar(255), "company" varchar(255), "work_phone" varchar(255), "work_email" varchar(255), "home_phone" varchar(255), "personal" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+
+
+Started GET "/" for 137.48.196.92 at 2015-02-23 19:23:19 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CardsController#index as HTML
+  [1m[35mCard Load (0.4ms)[0m  SELECT "cards".* FROM "cards"
+  Rendered cards/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 289ms (Views: 276.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/cards.css?body=1" for 137.48.196.92 at 2015-02-23 19:23:20 +0000
+
+
+Started GET "/assets/application.css?body=1" for 137.48.196.92 at 2015-02-23 19:23:20 +0000
+
+
+Started GET "/assets/application.js?body=1" for 137.48.196.92 at 2015-02-23 19:23:20 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 137.48.196.92 at 2015-02-23 19:23:20 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 137.48.196.92 at 2015-02-23 19:23:20 +0000
+
+
+Started GET "/assets/cards.js?body=1" for 137.48.196.92 at 2015-02-23 19:23:20 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 137.48.196.92 at 2015-02-23 19:23:20 +0000
+
+
+Started GET "/cards/new" for 137.48.196.92 at 2015-02-23 19:23:29 +0000
+Processing by CardsController#new as HTML
+  Rendered cards/new.html.erb within layouts/application (93.7ms)
+Completed 200 OK in 137ms (Views: 134.7ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/cards" for 137.48.196.92 at 2015-02-23 19:24:07 +0000
+Processing by CardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6bC9CQge9aVdFh1+MB5lxYAuUEXZrPGAowcs3TPk8TI=", "card"=>{"first_name"=>"Conner", "last_name"=>"Young", "company"=>"Target", "work_phone"=>"402-656-7888", "work_email"=>"", "home_phone"=>"402-112-9223", "personal"=>"test@unomaha.edu"}, "commit"=>"Create Card"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCard Exists (0.2ms)[0m  SELECT  1 AS one FROM "cards"  WHERE "cards"."work_email" = '' LIMIT 1
+  [1m[36mCard Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "cards"  WHERE "cards"."personal" = 'test@unomaha.edu' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered cards/new.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 85ms (Views: 66.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/cards.css?body=1" for 137.48.196.92 at 2015-02-23 19:24:07 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 137.48.196.92 at 2015-02-23 19:24:07 +0000
+
+
+Started GET "/assets/cards.js?body=1" for 137.48.196.92 at 2015-02-23 19:24:07 +0000
+
+
+Started GET "/assets/application.css?body=1" for 137.48.196.92 at 2015-02-23 19:24:07 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 137.48.196.92 at 2015-02-23 19:24:07 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 137.48.196.92 at 2015-02-23 19:24:07 +0000
+
+
+Started GET "/assets/application.js?body=1" for 137.48.196.92 at 2015-02-23 19:24:07 +0000
+
+
+Started POST "/cards" for 137.48.196.92 at 2015-02-23 19:24:16 +0000
+Processing by CardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6bC9CQge9aVdFh1+MB5lxYAuUEXZrPGAowcs3TPk8TI=", "card"=>{"first_name"=>"Conner", "last_name"=>"Young", "company"=>"Target", "work_phone"=>"402-656-7888", "work_email"=>"wyoung@target_corp.org", "home_phone"=>"402-112-9223", "personal"=>"test@unomaha.edu"}, "commit"=>"Create Card"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mCard Exists (0.3ms)[0m  SELECT  1 AS one FROM "cards"  WHERE "cards"."work_email" = 'wyoung@target_corp.org' LIMIT 1
+  [1m[36mCard Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "cards"  WHERE "cards"."personal" = 'test@unomaha.edu' LIMIT 1[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "cards" ("company", "created_at", "first_name", "home_phone", "last_name", "personal", "updated_at", "work_email", "work_phone") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["company", "Target"], ["created_at", "2015-02-23 19:24:16.987787"], ["first_name", "Conner"], ["home_phone", "402-112-9223"], ["last_name", "Young"], ["personal", "test@unomaha.edu"], ["updated_at", "2015-02-23 19:24:16.987787"], ["work_email", "wyoung@target_corp.org"], ["work_phone", "402-656-7888"]]
+  [1m[36m (12.1ms)[0m  [1mcommit transaction[0m
+Redirected to https://techexer-fractalwizz-1.c9.io/
+Completed 302 Found in 29ms (ActiveRecord: 14.5ms)
+
+
+Started GET "/" for 137.48.196.92 at 2015-02-23 19:24:17 +0000
+Processing by CardsController#index as HTML
+  [1m[35mCard Load (0.3ms)[0m  SELECT "cards".* FROM "cards"
+  Rendered cards/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 59ms (Views: 57.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/cards.css?body=1" for 137.48.196.92 at 2015-02-23 19:24:17 +0000
+
+
+Started GET "/assets/application.css?body=1" for 137.48.196.92 at 2015-02-23 19:24:17 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 137.48.196.92 at 2015-02-23 19:24:17 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 137.48.196.92 at 2015-02-23 19:24:17 +0000
+
+
+Started GET "/assets/cards.js?body=1" for 137.48.196.92 at 2015-02-23 19:24:17 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 137.48.196.92 at 2015-02-23 19:24:17 +0000
+
+
+Started GET "/assets/application.js?body=1" for 137.48.196.92 at 2015-02-23 19:24:17 +0000
+
+
+Started GET "/" for 137.48.197.66 at 2015-02-24 18:27:36 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CardsController#index as HTML
+  [1m[35mCard Load (0.3ms)[0m  SELECT "cards".* FROM "cards"
+  Rendered cards/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 148ms (Views: 130.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/cards.css?body=1" for 137.48.197.66 at 2015-02-24 18:27:36 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 137.48.197.66 at 2015-02-24 18:27:37 +0000
+
+
+Started GET "/assets/application.css?body=1" for 137.48.197.66 at 2015-02-24 18:27:37 +0000
+
+
+Started GET "/assets/application.js?body=1" for 137.48.197.66 at 2015-02-24 18:27:37 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 137.48.197.66 at 2015-02-24 18:27:37 +0000
+
+
+Started GET "/assets/cards.js?body=1" for 137.48.197.66 at 2015-02-24 18:27:37 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 137.48.197.66 at 2015-02-24 18:27:37 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (12.3ms)[0m  [1mCREATE TABLE "cards" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "last_name" varchar(255), "company" varchar(255), "work_phone" varchar(255), "work_email" varchar(255), "home_phone" varchar(255), "personal" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (11.7ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (12.3ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (10.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150222161212')

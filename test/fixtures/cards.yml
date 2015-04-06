@@ -1,19 +1,19 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  first_name: MyString
-  last_name: MyString
-  company: MyString
-  work_phone: MyString
-  work_email: MyString
-  home_phone: MyString
-  personal: MyString
+  first_name: Brad
+  last_name: Pitt
+  company: Hollywood
+  work_phone: 402-990-7384
+  work_email: bpitt@ebay.com
+  home_phone: 880-341-5567
+  personal: bpitt@google.com
 
 two:
-  first_name: MyString
-  last_name: MyString
-  company: MyString
-  work_phone: MyString
-  work_email: MyString
-  home_phone: MyString
-  personal: MyString
+  first_name: William
+  last_name: Young
+  company: Target
+  work_phone: 333-111-5564
+  work_email: wyoung@unomaha.edu
+  home_phone: 402-999-6777
+  personal: wyoung@red.edu
